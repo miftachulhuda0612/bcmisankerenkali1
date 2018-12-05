@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DaftarPengguna" />
-        <activity android:name=".LoginPengguna"></activity>
+        <activity android:name=".LoginPengguna" />
+
     </application>
 
 </manifest>
