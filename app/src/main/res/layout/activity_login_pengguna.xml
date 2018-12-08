@@ -1,74 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".LoginPengguna">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:layout_height="wrap_content">
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_email"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp">
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
 
-            <EditText
-                android:id="@+id/et_email"
+            <TextView
+                android:id="@+id/tv_login_pengguna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ketikkan Alamat Email"
-                android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+                android:gravity="center"
+                android:text="Login Pengguna"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_kata_sandi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp">
-
-            <EditText
-                android:id="@+id/et_kata_sandi"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ketikkan Kata Sandi"
-                android:inputType="textPassword" />
-        </android.support.design.widget.TextInputLayout>
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Masuk"
-            android:textColor="@android:color/black" />
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ketikkan Alamat Email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tv_atau"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:text="Atau"
-            android:textColor="@android:color/black"
-            android:textSize="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_kata_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
 
-        <Button
-            android:id="@+id/btn_daftar"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Daftar"
-            android:textColor="@android:color/black" />
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/et_kata_sandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ketikkan Kata Sandi"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
 
-</android.support.constraint.ConstraintLayout>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Masuk"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btn_login_google"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Masuk Melalui Google"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_atau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atau"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Daftar Baru"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
