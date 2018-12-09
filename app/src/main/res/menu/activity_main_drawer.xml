@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_riwayatPesanan"
+            android:icon="@drawable/ic_riwayatpesanan_24dp"
+            android:title="Riwayat Pesanan" />
+        <item
+            android:id="@+id/nav_informasiAkun"
+            android:icon="@drawable/ic_informasiakun_24dp"
+            android:title="Informasi Akun" />
+        <item
+            android:id="@+id/nav_pemberitahuan"
+            android:icon="@drawable/ic_pemberitahuan_24dp"
+            android:title="Pemberitahuan" />
+        <item
+            android:id="@+id/nav_panduan"
+            android:icon="@drawable/ic_panduan_24dp"
+            android:title="Panduan" />
+        <item
+            android:id="@+id/nav_tanyaJawab"
+            android:icon="@drawable/ic_tanyajawab_24dp"
+            android:title="Tanya Jawab" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_beriRate"
+                android:icon="@drawable/ic_rate_24dp"
+                android:title="Berikan Rate" />
+            <item
+                android:id="@+id/nav_tentangApp"
+                android:icon="@drawable/ic_tentang_24dp"
+                android:title="Tentang Aplikasi" />
+        </menu>
+    </item>
+
+</menu>
