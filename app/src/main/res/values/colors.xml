@@ -10,7 +10,7 @@
 
 
     <!-- Screens background color-->
-    <color name="warnaUtama">#f47b0f</color>
+    <color name="warnaUtama">#f27b0e</color>
     <color name="warnaKedua">#2c2c2c</color>
     <color name="bg_screen1">#f64c73</color>
     <color name="bg_screen2">#20d2bb</color>
