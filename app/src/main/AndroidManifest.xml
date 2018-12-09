@@ -16,12 +16,18 @@
         android:theme="@style/DefaultTheme">
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/DefaultTheme">
+            android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/DefaultTheme">
         </activity>
 
         <activity android:name=".DaftarPengguna" />
