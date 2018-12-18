@@ -24,6 +24,10 @@
             android:id="@+id/nav_tanyaJawab"
             android:icon="@drawable/ic_tanyajawab_24dp"
             android:title="Tanya Jawab" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
     </group>
 
     <item android:title="Lainnya">

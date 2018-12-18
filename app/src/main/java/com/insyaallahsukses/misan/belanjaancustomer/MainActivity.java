@@ -1,6 +1,8 @@
 package com.insyaallahsukses.misan.belanjaancustomer;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
@@ -14,13 +16,22 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageView bgapp;
+    ImageView bgapp, imgPengguna;
     LinearLayout textsplash, menuNav, menus;
     Animation fromBottom, gambarMuncul;
+    TextView tvNamaPengguna, tvEmailPengguna;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +66,31 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        mAuth = FirebaseAuth.getInstance();
+        //ambil navigationView dulu, baru set ke headerView
+        View headerView = navigationView.getHeaderView(0);
+        imgPengguna = headerView.findViewById(R.id.imgPengguna);
+        tvNamaPengguna = headerView.findViewById(R.id.tvNamaPengguna);
+        tvEmailPengguna = headerView.findViewById(R.id.tvEmailPengguna);
+
+        FirebaseUser user = mAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            Glide.with(getApplicationContext()).load(user.getPhotoUrl()).into(imgPengguna);
+            tvNamaPengguna.setText(user.getDisplayName());
+            tvEmailPengguna.setText(user.getEmail());
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        //if the user is not logged in
+        //opening the login activity
+        if (mAuth.getCurrentUser() == null) {
+            finish();
+            startActivity(new Intent(MainActivity.this, LoginPengguna.class));
+        }
     }
 
     @Override
@@ -79,7 +115,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_pemberitahuan) {
 
-            //lanjutin if elsenya
+        } else if (id == R.id.nav_logOut) {
+            mAuth.getInstance().signOut();
+            startActivity(new Intent(MainActivity.this, LoginPengguna.class));
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

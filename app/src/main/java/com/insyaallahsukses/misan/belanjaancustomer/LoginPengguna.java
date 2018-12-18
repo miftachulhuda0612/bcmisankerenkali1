@@ -45,7 +45,6 @@ public class LoginPengguna extends AppCompatActivity {
             }
         });
 
-        mAuth = FirebaseAuth.getInstance();
         //first we intialized the FirebaseAuth object
         mAuth = FirebaseAuth.getInstance();
 
@@ -119,7 +118,9 @@ public class LoginPengguna extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Log.d("TAG", "signInWithCredential:BERHASIL");
-                    FirebaseUser user = mAuth.getCurrentUser();
+                    Intent intentLoginGoogleBerhasil = new Intent(LoginPengguna.this, MainActivity.class);
+                    startActivity(intentLoginGoogleBerhasil);
+                    finish();
 
                     Toast.makeText(LoginPengguna.this, "Login Google Berhasil", Toast.LENGTH_SHORT).show();
                 } else {
