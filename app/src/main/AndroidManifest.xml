@@ -27,6 +27,19 @@
         <activity android:name=".DaftarPengguna" />
         <activity android:name=".LoginPengguna" />
 
+        <activity
+            android:name=".HistoriPesananPengguna"
+            android:label="Histori Pesanan Barang" />
+        <activity
+            android:name=".KonfirmasiPesanan"
+            android:label="Konfirmasi Pesanan" />
+        <activity android:name=".Cart" />
+        <activity android:name=".StatusPesanan" />
+        <activity android:name=".ListTokoTerdekat" />
+        <activity
+            android:name=".DetailToko"
+            android:theme="@style/DefaultTheme"></activity>
+
     </application>
 
 </manifest>
