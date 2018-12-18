@@ -14,19 +14,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/DefaultTheme">
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/DefaultTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".DaftarPengguna" />
         <activity android:name=".LoginPengguna" />
-
+        <activity
+            android:name=".HistoriPesananPengguna"
+            android:label="Histori Pesanan Barang" />
+        <activity
+            android:name=".KonfirmasiPesanan"
+            android:label="Konfirmasi Pesanan" />
+        <activity android:name=".Cart" />
+        <activity android:name=".StatusPesanan" />
+        <activity android:name=".ListTokoTerdekat" />
+        <activity
+            android:name=".DetailToko"
+            android:theme="@style/DefaultTheme"></activity>
     </application>
 
 </manifest>
