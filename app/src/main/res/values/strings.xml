@@ -15,4 +15,23 @@
     </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="title_activity_welcome"></string>
+    <string name="next">Lanjutkan</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mengerti</string>
+
+    <string name="slide_1_title">Halo!</string>
+    <string name="slide_1_desc">Anda bisa berbelanja di toko sekitar melalui aplikasi ini.</string>
+
+    <string name="slide_2_title">Belanja Mudah</string>
+    <string name="slide_2_desc">Galon, Gas, Bahan Pokok, cukup pesan dan langsung diantar.</string>
+
+    <string name="slide_3_title">Lacak Belanjaan</string>
+    <string name="slide_3_desc">Anda bisa mengetahui keberadaan barang belanjaan yang dipesan.</string>
+
+    <string name="slide_4_title">Belanja Aman</string>
+    <string name="slide_4_desc">Bayar ditempat, tanpa biaya tambahan.</string>
+
 </resources>
