@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1093757507268",
+    "firebase_url": "https://belanjaancust.firebaseio.com",
+    "project_id": "belanjaancust",
+    "storage_bucket": "belanjaancust.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093757507268:android:3dbc315710d99877",
+        "android_client_info": {
+          "package_name": "com.insyaallahsukses.misan.belanjaancustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093757507268-m5e8f417tou63lqgm03j7m7cip7d18lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.insyaallahsukses.misan.belanjaancustomer",
+            "certificate_hash": "59b4e12749fafc0a7341d9555ff521122b934920"
+          }
+        },
+        {
+          "client_id": "1093757507268-5mfts6q65mrtt5oui0hhu2v1jskjtpem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoyBhtTGGBFnuTHdSzDIO0KYW10LcGn50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093757507268-5mfts6q65mrtt5oui0hhu2v1jskjtpem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

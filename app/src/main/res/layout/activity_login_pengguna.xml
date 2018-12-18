@@ -71,13 +71,18 @@
                 android:text="Masuk"
                 android:textColor="@android:color/black" />
 
-            <Button
+            <!--<Button-->
+            <!--android:id="@+id/btn_login_google"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:text="Masuk Melalui Google"-->
+            <!--android:textColor="@android:color/black" />-->
+
+            <com.google.android.gms.common.SignInButton
                 android:id="@+id/btn_login_google"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="Masuk Melalui Google"
-                android:textColor="@android:color/black" />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/tv_atau"

@@ -28,7 +28,7 @@ public class SplashScreen extends Activity {
             videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
-                    Intent i = new Intent(SplashScreen.this, MainActivity.class);
+                    Intent i = new Intent(SplashScreen.this, LoginPengguna.class);
                     startActivity(i);
                     finish();
                 }
