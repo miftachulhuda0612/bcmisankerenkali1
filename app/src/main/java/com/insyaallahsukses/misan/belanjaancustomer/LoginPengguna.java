@@ -103,7 +103,7 @@ public class LoginPengguna extends AppCompatActivity {
                 //authenticating with firebase
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
-                Toast.makeText(LoginPengguna.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e("TAG", "signInResult:FAILED CODE SAAT LOGIN = " + e.getStatusCode());
             }
         }
     }
